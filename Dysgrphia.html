@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="view-height">
+        <div class="heading">
+            <nav style="background-color: transparent;">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-link" id=navl>
+
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">A-2 D-4</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="Adhd.html">ADHD</a>
+                                    <a href="#">Autism</a>
+                                    <a href="#">Dyslexia</a>
+                                    <a href="Dysgrphia.html">Dysgrphia</a>
+                                    <a href="#">Dyscalculia</a>
+                                    <a href="#">Dyspraxia</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            </nav>
+            <h1 style="text-align: center;"><span>DYSGRAPHIA</span></h1>
+        </div>
+        <div class="bigger-box">
+            <div class="intro box">
+                <h3> <span>Introduction</span></h3>
+                <div class="dabba">
+                    Kids with dysgraphia have unclear, irregular, or inconsistent handwriting, often with different
+                    slants,
+                    shapes,
+                    upper- and lower-case letters, and cursive and print styles. They also tend to write or copy things
+                    slowly.
+                    that
+                    may be caused by a learning disability called dysgraphia.
+                    Scientists aren't sure why dysgraphia happens in children. In adults, it's sometimes related to a
+                    brain
+                    injury,
+                    like a stroke. In kids, this learning disorder usually occurs along with other learning disabilities
+                    such as
+                    ADHD and dyslexia.
+                </div>
+            </div>
+            <div class="disease-img">
+
+            </div>
+        </div>
+        <div class="bigger-box">
+            <div class="detection box">
+                <h3><span>Detection</span></h3>
+                <ul>
+                    <li>
+                        Cramped grip, which may lead to a sore hand
+                    </li>
+                    <li>
+                        Difficulty spacing things out on paper or within margins (poor spatial planning)
+                    </li>
+                    <li>
+                        Frequent erasing
+                    </li>
+                    <li>
+                        Inconsistency in letter and word spacing
+                    </li>
+                    <li>
+                        Poor spelling, including unfinished words or missing words or letters
+                    </li>
+                    <li>
+                        Unusual wrist, body, or paper position while writing
+                    </li>
+                    <li>
+                        This learning disability also makes it hard to write and think at the same time. Creative
+                        writing
+                        tasks
+                        are
+                        often especially hard.
+                    </li>
+                </ul>
+            </div>
+            <div class="disease-img">
+
+            </div>
+        </div>
+        <div class="bigger-box">
+            <div class=" Diagnosis box">
+                <h3><span>Diagnosis</span></h3>
+                <ul>
+                    <li>
+                        The first step is for your child's paediatrician to rule out any other diseases or conditions
+                        that
+                        could
+                        cause
+                        writing difficulties.
+                    </li>
+                    <li>
+                        A licensed psychologist trained in learning disorders can diagnose dysgraphia. This could be
+                        your
+                        child's school psychologist. The specialist will give your child academic and writing tests that
+                        measure
+                        their ability
+                        to put thoughts into words and their fine motor skills. For instance, they may be asked to tap
+                        their
+                        fingers or
+                        turn their wrist a certain way.
+                    </li>
+                    <li>
+                        Your child also may be asked to write sentences or copy words and letters. The specialist will
+                        look
+                        at
+                        their:
+                        <br>
+                        Finished work
+                        <br>
+                        Hand and body position
+                        <br> Pencil grip
+                        <br> Posture
+                        <br>
+                        Writing process
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="disease-img">
+                rlgnkrnrsbgrbgrb
+            </div>
+        </div>
+    </section>
+    <script>
+        var navl = document.getElementById("navl")
+        function showmenu() {
+            navl.style.right = "0";
+        }
+        function hidemenu() {
+            navl.style.right = "-200px"
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

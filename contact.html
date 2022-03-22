@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="back-drop">
+        <nav style="background-color: transparent;">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-link" id=navl>
+
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">A-2 D-4</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="Adhd.html">ADHD</a>
+                                <a href="#">Autism</a>
+                                <a href="#">Dyslexia</a>
+                                <a href="Dysgrphia.html">Dysgrphia</a>
+                                <a href="#">Dyscalculia</a>
+                                <a href="#">Dyspraxia</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+        <h1 style="text-align: center; font-size: 60px;">
+            Members
+        </h1>
+        <div class="big-box campus ">
+            <div class="small-box  ">
+                <div class="info bio-image">
+
+                </div>
+                <div class="info">
+                    Jash <br>
+                    Team-Leader <br>
+                    B.Tech - CSE
+                </div>
+            </div>
+            <div class="small-box ">
+                <div class="info bio-image">
+
+                </div>
+                <div class="info">
+                    Bassamma <br>
+                    Team-Member <br>
+                    B.Tech - CSE
+
+                </div>
+            </div>
+            <div class="small-box ">
+                <div class="info bio-image">
+
+                </div>
+                <div class="info">
+                    Ghanashyam Vagale <br>
+                    Team-Member <br>
+                    B.Tech - CSE
+
+                </div>
+            </div>
+        </div>
+        <div class="big-box campus ">
+            <div class="small-box ">
+                <div class="info bio-image">
+                    dgbdbdbd
+                </div>
+                <div class="info">
+                    Hannah Christina G <br>
+                    Team-Member <br>
+                    B.Tech - CSE
+                </div>
+            </div>
+            <div class="small-box ">
+                <div class="info bio-image">
+
+                </div>
+                <div class="info">
+                    Sumukha U<br>
+                    Team-Member <br>
+                    B.Tech - CSE
+                </div>
+            </div>
+            <div class="small-box ">
+                <div class="info bio-image">
+
+                </div>
+                <div class="info">
+                    Syed Ali <br>
+                    Team-Member <br>
+                    B.Tech - CSE
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="back-drop " style="height: 60vh;">
+        <h3 style="text-align: center;font-size: 60px;">Mentors</h3>
+        <div class="big-box campus">
+            <div class="small-box">
+                <div class="info bio-img"></div>
+                <div class="info">
+                    Ms. Supriya M S
+                </div>
+            </div>
+            <div class="small-box">
+                <div class="small-box">
+                    <div class="info bio-img"></div>
+                    <div class="info">
+                        Dr. Kishore
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        var navl = document.getElementById("navl")
+        function showmenu() {
+            navl.style.right = "0";
+        }
+        function hidemenu() {
+            navl.style.right = "-200px"
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
