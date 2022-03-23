@@ -395,7 +395,7 @@ transform: scale(1.05);
 }
 .bad-box{
     height: 150vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("backkk.jpeg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/backkk.jpeg");
     /* margin-bottom: 15px; */
 }
 .boxx h2{
