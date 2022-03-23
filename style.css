@@ -94,7 +94,7 @@ nav img{
 
 
 }
-.nav-link ul li::after{
+.nav-link ul li::after,.boxxx h2 ::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -103,7 +103,7 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-link ul li:hover::after{
+.nav-link ul li:hover::after,.boxxx :hover::after{
     width: 100%;
 }
 .text-box{
@@ -386,3 +386,36 @@ transform: scale(1.05);
     background: #fff800;
     transition: 1s;
  }
+ 
+.boxxx{
+    align-items: center;
+    margin-top: 15px;
+    box-sizing: border-box;
+    height: 50vh;
+    width: 50vh;
+}
+.bad-box{
+    height: 150vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/WhatsApp Image 2022-03-22 at 8.28.56 PM.jpeg");
+    /* margin-bottom: 15px; */
+}
+.boxx h2{
+    margin-top: 50px;
+    padding: 25px;
+}
+.boxx p{
+    font-size:larger;
+    padding: 15px;
+}
+.boxxx :hover::after{
+    width: 80%;
+}
+.boxxx h2 ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1d7e45;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}

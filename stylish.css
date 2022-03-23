@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Saira+Semi+Condensed:wght@300&display=swap');
+*{
+    margin: 0px;    
+ }
+.rmap{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("");
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bac.jpg"); */
+    height: 100vh;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+
+}
+.elements{
+    position: relative;
+    color: #0A1661;
+    background-color: #DEEBFE;
+     /* height: 35vh; */
+     width: 35vh;
+    align-content: flex-start;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+    /* align-items: flex-start; */
+}
+
