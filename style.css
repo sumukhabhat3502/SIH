@@ -256,6 +256,14 @@ nav .fa{
 .info{
     align-items: center;
     margin-bottom: 15px;
+    height: 50%;
+    
+}
+.img1 img,.img2 img{
+    width: 100%;
+    border-radius: 25px;
+    height: 200px;
+
 }
 .campus{
     width: 80%;
@@ -361,9 +369,6 @@ transform: scale(1.05);
     margin-top: 5%;
 }
  @media (max-width:600px) {
-     .back-drop{
-
-     }
      .big-box{
          flex-direction: column;
      }
@@ -419,3 +424,39 @@ transform: scale(1.05);
     margin: auto;
     transition: 0.5s;
 }
+
+.img-cropper {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    align-items: center;
+    background-color:#80ccff; 
+    object-fit: contain;
+    
+    
+}
+
+.profile-pic {
+    display: flex;
+    margin: 0 auto;
+    /* margin-left: 25%;  */
+    /* height: 100%; */
+    /* width: auto; */
+     position:relative;
+     top:0;
+    align-items: center;
+    margin-top: 5px;
+    height:120%;
+    width: 120%;
+    
+  }
+  .profile-pic:hover{
+      cursor:pointer;
+      border-color: black;
+  }
