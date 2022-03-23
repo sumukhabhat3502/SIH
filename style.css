@@ -256,14 +256,8 @@ nav .fa{
 .info{
     align-items: center;
     margin-bottom: 15px;
-    height: 50%;
-    
-}
-.img1 img,.img2 img{
-    width: 100%;
-    border-radius: 25px;
-    height: 200px;
 
+    
 }
 .campus{
     width: 80%;
@@ -438,6 +432,7 @@ transform: scale(1.05);
     align-items: center;
     background-color:#80ccff; 
     object-fit: contain;
+    margin-top: 15px;
     
     
 }
